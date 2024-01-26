@@ -3,17 +3,14 @@
 //line grammar.y:1
 
 package main
-
 import __yyfmt__ "fmt"
-
 //line grammar.y:3
-
+		
 import (
 	"fmt"
 )
 
 var identifiers []string
-
 const ID = 57346
 
 var yyToknames = [...]string{
@@ -24,7 +21,8 @@ var yyToknames = [...]string{
 	"\";\"",
 }
 
-var yyStatenames = [...]string{}
+var yyStatenames = [...]string{
+}
 
 const yyEofCode = 1
 const yyErrCode = 2
@@ -32,13 +30,16 @@ const yyInitialStackSize = 16
 
 //line grammar.y:31
 
+
 var translations = map[string]string{
 	"var":     "var",
-	"func":    "funct",
+	"func":    "kiungo",
 	"if":      "kama",
 	"else":    "vinginevyo",
 	"for":     "kwa",
 	"package": "mfuko",
+	"import" : "leta",
+	"Println" : "Chapisha"
 	// Add more translations as needed
 }
 
@@ -55,6 +56,7 @@ var yyExca = [...]int8{
 	1, -1,
 	-2, 0,
 }
+
 
 const yyPrivate = 57344
 
@@ -101,15 +103,18 @@ var yyTok2 = [...]int8{
 	2, 3, 4,
 }
 
+
 var yyTok3 = [...]int8{
 	0,
 }
+
 
 var yyErrorMessages = [...]struct {
 	state int
 	token int
 	msg   string
-}{}
+}{
+}
 
 //line yaccpar:1
 
@@ -443,7 +448,7 @@ yydefault:
 	switch yynt {
 
 	case 4:
-		yyDollar = yyS[yypt-2 : yypt+1]
+		yyDollar = yyS[yypt-2:yypt+1]
 //line grammar.y:23
 		{
 			identifiers = append(identifiers, yyDollar[1])

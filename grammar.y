@@ -31,12 +31,14 @@ Identifier:
 %%
 
 var translations = map[string]string{
-	"var": "var",
-	"func": "funct",
-	"if": "kama",
-	"else": "vinginevyo",
-	"for": "kwa",
+	"var":     "var",
+	"func":    "kiungo",
+	"if":      "kama",
+	"else":    "vinginevyo",
+	"for":     "kwa",
 	"package": "mfuko",
+	"import" : "leta",
+	"Println" : "Chapisha"
 	// Add more translations as needed
 }
 
