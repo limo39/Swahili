@@ -18,5 +18,5 @@ SwahiliGo is a simple programming language based on Go, with English keywords re
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/swahiligo.git
-   cd swahiligo
+   git clone https://github.com/limo39/swahili.git
+   cd swahili
